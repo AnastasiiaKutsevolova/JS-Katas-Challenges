@@ -15,10 +15,9 @@ const sumLargestNumbers = (arr) => {
   return highestInt + nextHighestInt;
 };
 
-console.log(sumLargestNumbers([1, 10]));
-console.log(sumLargestNumbers([1, 2, 3]));
-console.log(sumLargestNumbers([10, 4, 34, 6, 92, 2]));
-
+console.log("1", sumLargestNumbers([1, 10]));
+console.log("1", sumLargestNumbers([1, 2, 3]));
+console.log("1", sumLargestNumbers([10, 4, 34, 6, 92, 2]));
 // 2nd method
 const sumLargestNumbers1 = function (num) {
   const maxNum = Math.max(...num);
@@ -29,9 +28,9 @@ const sumLargestNumbers1 = function (num) {
   return maxNum + secondMax;
 };
 
-console.log(sumLargestNumbers1([1, 10]));
-console.log(sumLargestNumbers1([1, 2, 3]));
-console.log(sumLargestNumbers1([10, 4, 34, 6, 92, 2]));
+console.log("2", sumLargestNumbers1([1, 10]));
+console.log("2", sumLargestNumbers1([1, 2, 3]));
+console.log("2", sumLargestNumbers1([10, 4, 34, 6, 92, 2]));
 
 // 3rd method
 const sumLargestNumbers2 = (data) =>
@@ -40,6 +39,6 @@ const sumLargestNumbers2 = (data) =>
     .slice(0, 2)
     .reduce((prev, curr) => prev + curr, 0);
 
-console.log("2", sumLargestNumbers2([1, 10]));
-console.log("2", sumLargestNumbers2([1, 2, 3]));
-console.log("2", sumLargestNumbers2([10, 4, 34, 6, 92, 2]));
+console.log("3", sumLargestNumbers2([1, 10]));
+console.log("3", sumLargestNumbers2([1, 2, 3]));
+console.log("3", sumLargestNumbers2([10, 4, 34, 6, 92, 2]));
