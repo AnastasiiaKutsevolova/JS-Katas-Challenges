@@ -1,3 +1,5 @@
+// # Function that adding two largest numbers in the array.
+
 // 1st method
 const sumLargestNumbers = (arr) => {
   let highestInt = 0;

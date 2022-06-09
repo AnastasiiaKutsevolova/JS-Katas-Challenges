@@ -89,6 +89,8 @@ console.log(
 );
 
 // Challenge 8
+// Function that adding only the numbers in the array which match the given condition( even or odd).
+
 const conditionalSum = function (arr, condition) {
   const add = (num1, num2) => {
     if (condition === "even" && num2 % 2 === 0) {
