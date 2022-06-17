@@ -7,16 +7,21 @@ if (args.length < 2) {
   process.exit();
 }
 
-let total = 0;
+const convertedNum = Number(nb);
 
-for (let nb of args) {
-  if (isNaN(Number(nb))) {
-    console.log(`Error: please input only numbers`);
-    process.exit();
-  }
+const sum = function (numbers) {
+  let total = 0;
 
-  if (Number.isInteger(Number(nb))) {
-    total += Number(nb);
+  for (let nb of args) {
+    if (isNaN(convertedNum)) {
+      console.log(`Error: please input only numbers`);
+      process.exit();
+    }
+
+    if (Number.isInteger(convertedNum)) {
+      total += convertedNum;
+    }
+    console.log("total:", total);
   }
-}
-console.log("total:", total);
+};
+const result = sum(args);
