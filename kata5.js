@@ -16,3 +16,8 @@ const reverseNum = (num) => {
   return parseInt(revNum) * Math.sign(num);
 };
 console.log("revNumber", reverseNum(676567));
+//////
+const maxNumber = (arr) => {
+  return Math.max(...arr);
+};
+console.log(maxNumber([1, 2, 3, 4, 6]));
